@@ -1,0 +1,17 @@
+{
+  "name": "craw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-html-parser": "^1.2.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./src/craw.test.js"
+  },
+  "keywords": ["crawler", "web-scrap", "spider"],
+  "author": "sammwy",
+  "license": "ISC"
+}
