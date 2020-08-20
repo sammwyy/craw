@@ -21,14 +21,14 @@ Get the content of the website as headers, paragraphs, paragraphs and all the te
 <ins>Output:</ins>
 ```javascript
 {
-  "text": "....", // String
-  "h1": [], // Array
-  "h2": []. // Array
-  "h3": [], // Array
-  "h4": [], // Array
-  "h5": [], // Array
-  "h6": [], // Array
-  "words": [] // Array
+  text: "....", // String
+  h1: [], // Array
+  h2: []. // Array
+  h3: [], // Array
+  h4: [], // Array
+  h5: [], // Array
+  h6: [], // Array
+  words: [] // Array
 }
 ```
 
@@ -44,7 +44,7 @@ Get a list of imports from the website. (like css, favicon and js)
 <ins>Output:</ins>
 ```javascript
 {
-  "scripts": [ // Array
+  scripts: [ // Array
     {
       integrity: "...", // String
       src: "...", // String
@@ -52,7 +52,7 @@ Get a list of imports from the website. (like css, favicon and js)
     }
   ],
 
-  "styles": [ // Array
+  styles: [ // Array
     {
       integrity: "...", // String
       href: "...", // String
@@ -65,4 +65,39 @@ Get a list of imports from the website. (like css, favicon and js)
     href: "..." // String 
   }
 }
-``	
+```
+
+### result.getLinks()
+Get a list of hyperlinks from the website.  
+<ins>Output:</ins>
+```javascript
+[ // Array
+  {
+    url: "...", // String
+    anchor: "...", // String
+    rel: [ ... ] // Array of Strings
+  }
+]
+```
+
+### result.getMedia()
+Get a list of multimedia elements from the website. (Like images, audios and videos)  
+<ins>Output:</ins>
+```javascript
+{
+  audios: [ // Array
+    {
+      src: "...", // String
+      type: "..." // String
+    }
+  ],
+  images: [ // Array
+    {
+      src: "...", // String
+      alt: "...", // String
+      loading: "..." // String
+    }
+  ],
+  videos: [ ... ] // Array of strings
+}
+```
