@@ -101,3 +101,29 @@ Get a list of multimedia elements from the website. (Like images, audios and vid
   videos: [ ... ] // Array of strings
 }
 ```
+
+### result.getMeta()
+Get a list of metadata tags from the website.  
+<ins>Output:</ins>
+```javascript
+{
+  author: "...", // String
+  viewport: "...", // String
+  robots: "...", // String
+  description: "...", // String
+  keywords: [], // Array of strings
+  image: "...", // String (Favicon)
+  charset: "...", // String
+  ... any other metadata tag like OG or Twitter ...
+}
+```
+
+### result.getTitle()
+Get the title of the website.  
+<ins>Output:</ins>
+```javascript
+"..." // String	
+```
+
+### result.toJSON()
+Run all functions and add the results of each one in the same object.
